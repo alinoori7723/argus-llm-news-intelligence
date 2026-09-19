@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Clean Market Feed (recorded fixture — not live news)</title>
+    <link>https://example.invalid/fixture/clean</link>
+    <description>Recorded RSS fixture for deterministic Phase 2.1 parser tests. Sample data only.</description>
+    <item>
+      <title>Sample: Federal Reserve policy forum schedule note (fixture)</title>
+      <link>https://example.invalid/fixture/clean/fed-forum</link>
+      <guid>clean-fed-forum-001</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 GMT</pubDate>
+      <description>Recorded sample entry referencing a scheduled policy forum. Counts only; no interpretation.</description>
+      <author>Sample Wire (fixture)</author>
+    </item>
+    <item>
+      <title>Sample: European Central Bank meeting calendar entry (fixture)</title>
+      <link>https://example.invalid/fixture/clean/ecb-calendar</link>
+      <guid>clean-ecb-calendar-002</guid>
+      <pubDate>Thu, 28 May 2026 10:05:00 GMT</pubDate>
+      <description>Recorded sample calendar entry for a scheduled meeting. Source-backed reference only.</description>
+      <author>Sample Wire (fixture)</author>
+    </item>
+    <item>
+      <title>Sample: Quarterly earnings calendar summary (fixture)</title>
+      <link>https://example.invalid/fixture/clean/earnings-calendar</link>
+      <guid>clean-earnings-calendar-003</guid>
+      <pubDate>Thu, 28 May 2026 11:15:00 GMT</pubDate>
+      <description>Recorded sample summary of upcoming earnings dates. Neutral reference text.</description>
+      <author>Sample Wire (fixture)</author>
+    </item>
+    <item>
+      <title>Sample: Currency reference rates published (fixture)</title>
+      <link>https://example.invalid/fixture/clean/reference-rates</link>
+      <guid>clean-reference-rates-004</guid>
+      <pubDate>Thu, 28 May 2026 12:00:00 GMT</pubDate>
+      <description>Recorded sample entry noting reference rates were published. No commentary.</description>
+      <author>Sample Wire (fixture)</author>
+    </item>
+    <item>
+      <title>Sample: Commodity inventory report released (fixture)</title>
+      <link>https://example.invalid/fixture/clean/inventory-report</link>
+      <guid>clean-inventory-report-005</guid>
+      <pubDate>Thu, 28 May 2026 13:45:00 GMT</pubDate>
+      <description>Recorded sample entry noting an inventory report was released. Counts only.</description>
+      <author>Sample Wire (fixture)</author>
+    </item>
+    <item>
+      <title>Sample: Regional logistics update note (fixture)</title>
+      <link>https://example.invalid/fixture/clean/logistics-update</link>
+      <guid>clean-logistics-update-006</guid>
+      <pubDate>Thu, 28 May 2026 14:20:00 GMT</pubDate>
+      <description>Recorded sample logistics note. Source-backed reference, no inferred state.</description>
+      <author>Sample Wire (fixture)</author>
+    </item>
+  </channel>
+</rss>

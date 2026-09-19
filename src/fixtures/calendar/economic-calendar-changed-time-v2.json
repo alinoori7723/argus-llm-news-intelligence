@@ -1,0 +1,20 @@
+{
+  "source": "Sample Economic Calendar (recorded fixture — not live data)",
+  "snapshotLabel": "later snapshot v2 with a moved time, sample data only",
+  "events": [
+    {
+      "sourceEventId": "evt-us-cpi-2026-06",
+      "canonicalEventKey": "US|USD|cpi m/m|2026-06",
+      "eventName": "CPI m/m",
+      "country": "US",
+      "currency": "USD",
+      "eventCategory": "inflation",
+      "importance": "high",
+      "status": "scheduled",
+      "scheduledFor": "2026-06-03T14:00:00.000Z",
+      "previous": "0.2%",
+      "forecast": "0.3%",
+      "sourceUrl": "https://example.invalid/fixture/calendar/us-cpi"
+    }
+  ]
+}

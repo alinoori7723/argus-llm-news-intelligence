@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Missing-PubDate Feed (recorded fixture — not live news)</title>
+    <link>https://example.invalid/fixture/no-pubdate</link>
+    <description>Recorded RSS fixture: valid items with no pubDate. Sample data only.</description>
+    <item>
+      <title>Sample: Entry without a publication date A (fixture)</title>
+      <link>https://example.invalid/fixture/no-pubdate/a</link>
+      <guid>nopub-a-001</guid>
+      <description>Recorded sample entry with identity and title but no pubDate element.</description>
+    </item>
+    <item>
+      <title>Sample: Entry without a publication date B (fixture)</title>
+      <link>https://example.invalid/fixture/no-pubdate/b</link>
+      <guid>nopub-b-002</guid>
+      <description>Recorded sample entry; sourceEventTime must be unknown, never observedAt.</description>
+    </item>
+    <item>
+      <title>Sample: Entry without a publication date C (fixture)</title>
+      <link>https://example.invalid/fixture/no-pubdate/c</link>
+      <guid>nopub-c-003</guid>
+      <description>Recorded sample entry with a stable guid and link reference only.</description>
+    </item>
+  </channel>
+</rss>

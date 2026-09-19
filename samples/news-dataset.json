@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "dataset-v1",
+  "id": "synthetic-macro-v1",
+  "description": "Fictional institutions, fictional news, and reserved .example domains. Created for reproducible engineering demonstrations. Not financial data or advice.",
+  "license": "CC0-1.0",
+  "synthetic": true,
+  "observedAt": "2026-09-18T12:00:00Z",
+  "sources": [
+    {
+      "id": "central-bank",
+      "name": "Northbank Central Bank",
+      "tier": "primary",
+      "legalStatus": "allowed",
+      "enabled": true
+    },
+    {
+      "id": "statistics-office",
+      "name": "Harbor Statistics Office",
+      "tier": "primary",
+      "legalStatus": "allowed",
+      "enabled": true
+    },
+    {
+      "id": "energy-agency",
+      "name": "Coast Energy Agency",
+      "tier": "primary",
+      "legalStatus": "allowed",
+      "enabled": true
+    },
+    {
+      "id": "wire",
+      "name": "Meridian Newswire",
+      "tier": "reputable",
+      "legalStatus": "allowed",
+      "enabled": true
+    },
+    {
+      "id": "community",
+      "name": "Community Digest",
+      "tier": "unknown",
+      "legalStatus": "needs_review",
+      "enabled": true
+    },
+    {
+      "id": "disabled-feed",
+      "name": "Paused Feed",
+      "tier": "unknown",
+      "legalStatus": "disabled",
+      "enabled": false
+    }
+  ],
+  "articles": [
+    {
+      "id": "policy",
+      "sourceId": "central-bank",
+      "title": "Policy rate held at 4.25 percent",
+      "text": "Northbank Central Bank held its policy rate at 4.25 percent. The bank said its next scheduled policy announcement is on 30 October.",
+      "url": "https://northbank.example/releases/policy-september",
+      "publishedAt": "2026-09-18T10:00:00Z",
+      "category": "Monetary policy"
+    },
+    {
+      "id": "policy-wire",
+      "sourceId": "wire",
+      "title": "Policy rate held at 4.25 percent",
+      "text": "Northbank Central Bank held its policy rate at 4.25 percent. The bank said its next scheduled policy announcement is on 30 October.",
+      "url": "https://northbank.example/releases/policy-september?utm_source=meridian",
+      "publishedAt": "2026-09-18T10:00:00Z",
+      "category": "Monetary policy"
+    },
+    {
+      "id": "inflation",
+      "sourceId": "statistics-office",
+      "title": "Annual consumer inflation eases to 2.8 percent",
+      "text": "Harbor Statistics Office reported annual consumer inflation of 2.8 percent in August, compared with 3.1 percent in July. The release said housing costs contributed to the annual increase.",
+      "url": "https://harbor.example/releases/august-inflation",
+      "publishedAt": "2026-09-18T08:30:00Z",
+      "category": "Economic data"
+    },
+    {
+      "id": "inflation-wire",
+      "sourceId": "wire",
+      "title": "Annual consumer inflation eases to 2.8 percent",
+      "text": "Harbor Statistics Office reported annual consumer inflation of 2.8 percent in August, compared with 3.1 percent in July. The release said housing costs contributed to the annual increase.",
+      "url": "https://harbor.example/releases/august-inflation?utm_source=meridian",
+      "publishedAt": "2026-09-18T08:30:00Z",
+      "category": "Economic data"
+    },
+    {
+      "id": "energy",
+      "sourceId": "energy-agency",
+      "title": "Weekly energy inventories rise by 2.1 million barrels",
+      "text": "Coast Energy Agency reported an increase of 2.1 million barrels in weekly crude inventories. The agency described the figures as preliminary and subject to revision.",
+      "url": "https://coast.example/reports/weekly-inventories",
+      "publishedAt": "2026-09-18T09:30:00Z",
+      "category": "Energy"
+    },
+    {
+      "id": "energy-wire",
+      "sourceId": "wire",
+      "title": "Weekly energy inventories rise by 2.1 million barrels",
+      "text": "Coast Energy Agency reported an increase of 2.1 million barrels in weekly crude inventories. The agency described the figures as preliminary and subject to revision.",
+      "url": "https://coast.example/reports/weekly-inventories?utm_source=meridian",
+      "publishedAt": "2026-09-18T09:30:00Z",
+      "category": "Energy"
+    },
+    {
+      "id": "industry",
+      "sourceId": "statistics-office",
+      "title": "Industrial output increases by 0.4 percent",
+      "text": "Harbor Statistics Office reported that industrial output increased by 0.4 percent in August. The office said its previous monthly estimate was unchanged.",
+      "url": "https://harbor.example/releases/industrial-output",
+      "publishedAt": "2026-09-18T09:00:00Z",
+      "category": "Economic data"
+    },
+    {
+      "id": "industry-wire",
+      "sourceId": "wire",
+      "title": "Industrial output increases by 0.4 percent",
+      "text": "Harbor Statistics Office reported that industrial output increased by 0.4 percent in August. The office said its previous monthly estimate was unchanged.",
+      "url": "https://harbor.example/releases/industrial-output?utm_source=meridian",
+      "publishedAt": "2026-09-18T09:00:00Z",
+      "category": "Economic data"
+    },
+    {
+      "id": "policy-repost",
+      "sourceId": "wire",
+      "title": "Policy rate held at 4.25 percent",
+      "text": "Northbank Central Bank held its policy rate at 4.25 percent. The bank said its next scheduled policy announcement is on 30 October.",
+      "url": "https://northbank.example/releases/policy-september?utm_medium=rss",
+      "publishedAt": "2026-09-18T10:00:00Z",
+      "category": "Monetary policy"
+    },
+    {
+      "id": "undated-brief",
+      "sourceId": "wire",
+      "title": "Policy briefing awaiting a publication time",
+      "text": "Meridian Newswire published a policy briefing without a source publication timestamp. The publication time has not been established.",
+      "url": "https://meridian.example/briefs/undated",
+      "publishedAt": null,
+      "category": "Source review"
+    },
+    {
+      "id": "unreviewed",
+      "sourceId": "community",
+      "title": "Unreviewed community headline",
+      "text": "This source is pending a usage review. It must not reach generation.",
+      "url": "https://community.example/unreviewed",
+      "publishedAt": "2026-09-18T11:00:00Z",
+      "category": "Source review"
+    },
+    {
+      "id": "paused",
+      "sourceId": "disabled-feed",
+      "title": "Disabled source headline",
+      "text": "This source is disabled. It must not reach generation.",
+      "url": "https://paused.example/disabled",
+      "publishedAt": "2026-09-18T11:10:00Z",
+      "category": "Source review"
+    }
+  ]
+}

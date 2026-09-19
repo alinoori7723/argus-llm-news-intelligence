@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Broken XML Feed (recorded fixture — not live news)</title>
+    <link>https://example.invalid/fixture/broken</link>
+    <description>Recorded RSS fixture that is intentionally NOT well-formed (unterminated item). Sample data only.</description>
+    <item>
+      <title>Sample: Entry inside a structurally broken document (fixture)</title>
+      <link>https://example.invalid/fixture/broken/one</link>
+      <guid>broken-one-001</guid>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+      <description>This item element is never closed, so the payload is malformed XML.</description>
+  </channel>
+</rss>

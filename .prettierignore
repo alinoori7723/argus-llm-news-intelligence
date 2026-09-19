@@ -1,0 +1,9 @@
+.argus
+dist
+coverage
+node_modules
+pnpm-lock.yaml
+src/fixtures/intelligence/demo-run.json
+playwright-report
+test-results
+*.docx

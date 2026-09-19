@@ -1,0 +1,43 @@
+{
+  "source": "Sample Economic Calendar (recorded fixture — not live data)",
+  "snapshotLabel": "malformed snapshot exercising quarantine paths, sample data only",
+  "events": [
+    {
+      "eventName": "Event with no identity",
+      "country": "US",
+      "currency": "USD",
+      "importance": "high",
+      "status": "scheduled",
+      "scheduledFor": "2026-06-04T12:30:00.000Z"
+    },
+    {
+      "sourceEventId": "evt-mal-no-time",
+      "eventName": "Scheduled event missing a time",
+      "country": "EU",
+      "currency": "EUR",
+      "importance": "medium",
+      "status": "scheduled"
+    },
+    {
+      "sourceEventId": "evt-mal-bad-time",
+      "eventName": "Scheduled event with invalid time",
+      "country": "GB",
+      "currency": "GBP",
+      "importance": "high",
+      "status": "scheduled",
+      "scheduledFor": "13 o'clock last tuesday"
+    },
+    {
+      "sourceEventId": "evt-mal-bad-importance",
+      "canonicalEventKey": "JP|JPY|core machinery orders|2026-06",
+      "eventName": "Core machinery orders",
+      "country": "JP",
+      "currency": "JPY",
+      "eventCategory": "industry",
+      "importance": "extreme",
+      "status": "scheduled",
+      "scheduledFor": "2026-06-05T05:00:00.000Z",
+      "sourceUrl": "https://example.invalid/fixture/calendar/jp-machinery"
+    }
+  ]
+}

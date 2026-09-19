@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Future-PubDate Feed (recorded fixture — not live news)</title>
+    <link>https://example.invalid/fixture/future</link>
+    <description>Recorded RSS fixture: a future-dated item plus a normal item. Sample data only.</description>
+    <item>
+      <title>Sample: Entry with a far-future publication date (fixture)</title>
+      <link>https://example.invalid/fixture/future/ahead</link>
+      <guid>future-ahead-001</guid>
+      <pubDate>Mon, 28 May 2029 09:00:00 GMT</pubDate>
+      <description>Recorded sample entry dated in the future; must be caveated, not normal chronology.</description>
+    </item>
+    <item>
+      <title>Sample: Entry with a normal past publication date (fixture)</title>
+      <link>https://example.invalid/fixture/future/normal</link>
+      <guid>future-normal-002</guid>
+      <pubDate>Wed, 27 May 2026 09:00:00 GMT</pubDate>
+      <description>Recorded sample entry with a valid past pubDate for contrast.</description>
+    </item>
+  </channel>
+</rss>

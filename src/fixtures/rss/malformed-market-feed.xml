@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample Malformed Market Feed (recorded fixture — not live news)</title>
+    <link>https://example.invalid/fixture/malformed</link>
+    <description>Recorded RSS fixture exercising honest-fail / quarantine paths. Sample data only.</description>
+
+    <!-- 1. Fully valid item — should parse cleanly. -->
+    <item>
+      <title>Sample: Valid baseline entry (fixture)</title>
+      <link>https://example.invalid/fixture/malformed/valid</link>
+      <guid>malformed-valid-001</guid>
+      <pubDate>Thu, 28 May 2026 08:00:00 GMT</pubDate>
+      <description>Recorded sample valid entry. Source-backed reference only.</description>
+    </item>
+
+    <!-- 2. Missing title — must be quarantined. -->
+    <item>
+      <link>https://example.invalid/fixture/malformed/no-title</link>
+      <guid>malformed-notitle-002</guid>
+      <pubDate>Thu, 28 May 2026 08:30:00 GMT</pubDate>
+      <description>Recorded sample entry with no title element.</description>
+    </item>
+
+    <!-- 3. Invalid pubDate — parsed, but sourceEventTime must stay null + warning. -->
+    <item>
+      <title>Sample: Entry with unparseable date (fixture)</title>
+      <link>https://example.invalid/fixture/malformed/bad-date</link>
+      <guid>malformed-badpub-003</guid>
+      <pubDate>not-a-real-date</pubDate>
+      <description>Recorded sample entry with a broken pubDate value.</description>
+    </item>
+
+    <!-- 4. Missing identity (no guid AND no link) — must be quarantined. -->
+    <item>
+      <title>Sample: Entry with no identity reference (fixture)</title>
+      <pubDate>Thu, 28 May 2026 09:00:00 GMT</pubDate>
+      <description>Recorded sample entry with neither guid nor link.</description>
+    </item>
+
+    <!-- 5. Duplicate guid (same as item 1) — must dedupe with a warning. -->
+    <item>
+      <title>Sample: Duplicate of the baseline entry (fixture)</title>
+      <link>https://example.invalid/fixture/malformed/valid-dup</link>
+      <guid>malformed-valid-001</guid>
+      <pubDate>Thu, 28 May 2026 09:30:00 GMT</pubDate>
+      <description>Recorded sample duplicate entry; reuses the baseline guid.</description>
+    </item>
+
+    <!-- 6. HTML in title/excerpt — must be sanitized before user-facing fields. -->
+    <item>
+      <title><![CDATA[Sample: <b>Bold</b> market note (fixture)]]></title>
+      <link>https://example.invalid/fixture/malformed/html</link>
+      <guid>malformed-html-006</guid>
+      <pubDate>Thu, 28 May 2026 10:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Recorded sample with <script>doStuff()</script> embedded markup.</p>]]></description>
+    </item>
+  </channel>
+</rss>

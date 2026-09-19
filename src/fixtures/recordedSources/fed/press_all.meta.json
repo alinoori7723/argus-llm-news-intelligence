@@ -1,0 +1,17 @@
+{
+  "sourceId": "fed_press_all",
+  "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
+  "observedAt": "2026-06-01T09:57:46.931Z",
+  "recordedAt": "2026-06-01T09:57:46.931Z",
+  "contentType": "text/xml",
+  "byteLength": 14925,
+  "sha256": "3a48b99da671204f480051757342c152f2e61fd3e02b2ada193b7c3705f3956b",
+  "recordingToolVersion": "record-fed-rss-v1",
+  "sourceReadinessRuleVersion": "source-readiness-rule-v1",
+  "fetchContractVersion": "fetch-contract-v1",
+  "parserVersion": "rss-parser-v1",
+  "legalEvidenceNote": "Official Federal Reserve Board RSS feed page lists \"All Press Releases\" and describes RSS reader/subscription usage. Recorded once for offline development; no automatic polling. https://www.federalreserve.gov/feeds/feeds.htm",
+  "acquisitionMode": "manual_recording_only",
+  "runtimeMode": "recorded_fixture_only",
+  "sourceAuthority": "official_primary_source"
+}
